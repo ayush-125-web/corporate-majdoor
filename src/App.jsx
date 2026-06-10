@@ -1,4 +1,5 @@
-import { useState } from 'react'
+
+import NavBar from './component/navBar'
 
 
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-
+     <NavBar></NavBar>
     </>
   )
 }
