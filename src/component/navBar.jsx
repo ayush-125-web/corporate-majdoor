@@ -61,7 +61,7 @@ const NavBar = () => {
 
         <ul className="nav nav-pills flex-column mt-auto">
             <li>
-            <a href="#" className="nav-link text-white">
+            <a href="about-us" className="nav-link text-white">
               <FaUsers size={20} className='me-2'></FaUsers>
               About Us
             </a>
