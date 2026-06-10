@@ -2,6 +2,7 @@
 import NavBar from './component/navBar'
 import { Routes,Route } from 'react-router-dom'
 import HeroSection from './component/heroSection'
+import AboutUs from './component/aboutUs'
 
 
 
@@ -12,14 +13,13 @@ function App() {
     <>
     <div className='flex'>
       <NavBar></NavBar>
-     
       <div className='flex flex-col flex-1 overflow-y-auto'>
         <Routes>
           <Route path='/' element={<HeroSection/>}></Route>
+          <Route path='/about-us' element={<AboutUs/>}> </Route>
         </Routes>
       </div>
-    </div>
-     
+    </div>     
     </>
   )
 }
