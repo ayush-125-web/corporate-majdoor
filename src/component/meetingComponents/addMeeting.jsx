@@ -1,17 +1,17 @@
 import { useContext } from 'react';
 import styles from '../../style/addMeeting.module.css'
 import { IoCloseOutline } from "react-icons/io5";
-import Context from '../../store/context';
 import { useRef } from 'react';
 // import Draggable from 'react-draggable'
 
 const AddMeeting=({setPopUp,meets,setMeets})=>{
     const DateRef=useRef(null),TimeRef=useRef(null),DescriptionRef=useRef(null);
 
-    const{meetings}=useContext(Context)
+    
     const handalOnSubmit=()=>{
-        const date=DateRef.current.value,time=TimeRef.current.value,description=DescriptionRef.current.value;
-        setMeets([...meets,{Date:date,Time:time,Description:description}]);
+        const date=DateRef.current.value,time=TimeRef.current.value,description=DescriptionRef.current.value,id=crypto.randomUUID();
+        DateRef.current.value='',TimeRef.current.value='',DescriptionRef.current.value='';
+        setMeets([...meets,{id:id,Date:date,Time:time,Description:description}]);
     }
     return (
         // <Draggable>

@@ -3,7 +3,7 @@ import Context from "../../store/context"
 import styles from '../../style/meetingTable.module.css'
 import MeetingDetails from "./meetingDetails";
 
-const MeetingTable=({meets})=>{
+const MeetingTable=({meets,setMeets})=>{
     return (
         <>
           <table class="table table-hover gap-5">
@@ -19,7 +19,7 @@ const MeetingTable=({meets})=>{
                     {meets.map((meet,idx)=>{
                         return (
                             <>
-                              <MeetingDetails meet={meet} idx={idx}></MeetingDetails>   
+                              <MeetingDetails meet={meet} idx={idx} meets={meets} setMeets={setMeets}></MeetingDetails>   
                             </>
                             
                         ) 
