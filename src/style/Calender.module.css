@@ -1,0 +1,10 @@
+.container{
+    height: 45vh;
+    border-color: blue;
+    border-radius: 10px;
+    border-style: solid;
+    border-width:3px;
+    padding: 10px;
+    background-color: rgb(243, 221, 240);
+    margin-right:2%
+}
