@@ -34,7 +34,7 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <a href="/meetings" className="nav-link text-white">
               <SlCalender size={20} className='me-2'></SlCalender>
               Meetings
             </a>
