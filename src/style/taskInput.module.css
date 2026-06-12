@@ -1,0 +1,12 @@
+.popUps{
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 224, 224);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width:40vw
+}
