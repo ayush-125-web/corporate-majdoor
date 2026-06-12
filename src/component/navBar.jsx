@@ -15,7 +15,7 @@ const NavBar = () => {
     <>
       <div
         className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark min-vh-100 rounded-2"
-        style={{ width: "280px" }}
+        style={{ width: "280px",maxHeight:'100vh' }}
       >
         <div  className="d-flex align-items-center">
             <NavLink to="/"   className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"> 
