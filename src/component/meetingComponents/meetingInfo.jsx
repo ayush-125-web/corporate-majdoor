@@ -3,7 +3,9 @@ import styles from '../../style/meetingInfo.module.css'
 import MeetingTable from "./meetingTable"
 
 
-const MeetingInfo=({setPopUp,meets})=>{
+const MeetingInfo=({setPopUp,meets,setMeets})=>{
+
+    console.log(meets);
 
     return (
         <>
@@ -14,7 +16,7 @@ const MeetingInfo=({setPopUp,meets})=>{
             </div>
            
             <hr/>
-            {meetingData.length==0?<p>You Have No Upcomming Meetings </p>:<MeetingTable meets={meets}></MeetingTable>}
+            {meets.length==0?<p>You Have No Upcomming Meetings </p>:<MeetingTable meets={meets} setMeets={setMeets}></MeetingTable>}
         </div>
         </>
     )

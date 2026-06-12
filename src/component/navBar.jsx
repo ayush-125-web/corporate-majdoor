@@ -7,6 +7,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { MdOutlineHub } from "react-icons/md";
 import { PiProjectorScreenChartDuotone } from "react-icons/pi";
 import { FaUsers } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -28,43 +29,60 @@ const NavBar = () => {
 
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a href="#" className="nav-link active" aria-current="page">
+            <NavLink to="/dashboard" style={({isActive})=>({
+              background:isActive?'blue':'none'
+            })} className='nav-link text-white'>
               <RxDashboard size={20} className='me-2'></RxDashboard>
               DashBoard
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/meetings" className="nav-link text-white">
+            <NavLink to="/meetings" className="nav-link text-white"
+            style={({isActive})=>({
+              background:isActive?'blue':'none'
+            })}>
               <SlCalender size={20} className='me-2'></SlCalender>
               Meetings
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <NavLink to="/task" className="nav-link text-white"
+            style={({isActive})=>({
+              background:isActive?'blue':'none'
+            })}>
               <FaTasks size={20} className='me-2'></FaTasks>
               Tasks
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <NavLink to="/contacts" className="nav-link text-white"
+            style={({isActive})=>({
+              background:isActive?'blue':'none'
+            })}>
               <RiContactsBook3Line size={20} className='me-2'></RiContactsBook3Line>
               Contacts
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <NavLink to="/project" className="nav-link text-white"
+            style={({isActive})=>({
+              background:isActive?'blue':'none'
+            })}>
               <PiProjectorScreenChartDuotone size={20} className='me-2'></PiProjectorScreenChartDuotone>
               Projects
-            </a>
+            </NavLink>
           </li>
         </ul>
 
         <ul className="nav nav-pills flex-column mt-auto">
             <li>
-            <a href="#" className="nav-link text-white">
+            <NavLink to="/about" className="nav-link text-white"
+            style={({isActive})=>({
+              background:isActive?'blue':'none'
+            })}>
               <FaUsers size={20} className='me-2'></FaUsers>
               About Us
-            </a>
+            </NavLink>
           </li>
         </ul>
 
