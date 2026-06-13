@@ -18,10 +18,10 @@ const NavBar = () => {
         style={{ width: "280px" }}
       >
         <div  className="d-flex align-items-center">
-            <a href="/"   className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"> 
+            <NavLink to="/"   className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"> 
               <MdOutlineHub size={20} className='me-2'></MdOutlineHub>
               <span className="fs-4">METRIC HUB</span>
-            </a>
+            </NavLink>
             <CiMenuBurger size={20}></CiMenuBurger>
         </div>
         
@@ -31,44 +31,44 @@ const NavBar = () => {
           <li className="nav-item">
             <NavLink to="/dashboard" style={({isActive})=>({
               background:isActive?'blue':'none'
-            })} className='nav-link text-white'>
-              <RxDashboard size={20} className='me-2'></RxDashboard>
+            })} className='nav-link text-white d-flex align-items-center'>
+              <RxDashboard size={20} className='me-3'></RxDashboard>
               DashBoard
             </NavLink>
           </li>
           <li>
-           <NavLink to="/meetings" className="nav-link text-white"
+           <NavLink to="/meetings" className="nav-link text-white d-flex align-items-center "
             style={({isActive})=>({
               background:isActive?'blue':'none'
             })}>
-              <SlCalender size={20} className='me-2'></SlCalender>
+              <SlCalender size={20} className='me-3'></SlCalender>
               Meetings
             </NavLink>
           </li>
           <li>
-            <NavLink to="/task" className="nav-link text-white"
+            <NavLink to="/task" className="nav-link text-white d-flex align-items-center"
             style={({isActive})=>({
               background:isActive?'blue':'none'
             })}>
-              <FaTasks size={20} className='me-2'></FaTasks>
+              <FaTasks size={20} className='me-3'></FaTasks>
               Tasks
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contacts" className="nav-link text-white"
+            <NavLink to="/contacts" className="nav-link text-white d-flex align-items-center"
             style={({isActive})=>({
               background:isActive?'blue':'none'
             })}>
-              <RiContactsBook3Line size={20} className='me-2'></RiContactsBook3Line>
+              <RiContactsBook3Line size={20} className='me-3'></RiContactsBook3Line>
               Contacts
             </NavLink>
           </li>
           <li>
-            <NavLink to="/project" className="nav-link text-white"
+            <NavLink to="/project" className="nav-link text-white d-flex align-items-center"
             style={({isActive})=>({
               background:isActive?'blue':'none'
             })}>
-              <PiProjectorScreenChartDuotone size={20} className='me-2'></PiProjectorScreenChartDuotone>
+              <PiProjectorScreenChartDuotone size={20} className='me-3'></PiProjectorScreenChartDuotone>
               Projects
             </NavLink>
           </li>
@@ -76,11 +76,11 @@ const NavBar = () => {
 
         <ul className="nav nav-pills flex-column mt-auto">
             <li>
-            <NavLink to="/about" className="nav-link text-white"
+            <NavLink to="/about" className="nav-link text-white d-flex align-items-center"
             style={({isActive})=>({
               background:isActive?'blue':'none'
             })}>
-              <FaUsers size={20} className='me-2'></FaUsers>
+              <FaUsers size={20} className='me-3'></FaUsers>
               About Us
             </NavLink>
           </li>
