@@ -9,6 +9,9 @@ import { useState } from 'react'
 import Task from './component/task'
 import taskData from './data/taskData'
 import NavBar from './component/navBar'
+import contacts from './data/contacts'
+import favContacts from './data/favContact'
+import Contacts from './component/contacts'
 
 
 
@@ -16,6 +19,9 @@ function App() {
 
   const[meets,setMeets]=useState(meetingData)
   const [tasks,setTasks]=useState(taskData)
+  const [conts,setContacts]=useState(contacts)
+  const [favConts,setFavContacts]=useState(favContacts)
+
 
   return (
     <>
@@ -27,6 +33,7 @@ function App() {
           <Route path='/about' element={<AboutUs/>}> </Route>
           <Route path='/meetings' element={<Meeting meets={meets} setMeets={setMeets}/>}></Route>
           <Route path='/task' element={<Task tasks={tasks} setTasks={setTasks}/>}></Route>
+          <Route path='/contacts' element={<Contacts conts={conts} setContacts={setContacts} favContacts={favContacts} setFavContact={setFavContacts}/>}></Route>
         </Routes>
       </div>
     </div> 
