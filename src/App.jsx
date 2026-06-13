@@ -11,12 +11,12 @@ function App() {
 
   return (
     <>
-    <div className='flex'>
+    <div className='flex gap-4'>
       <NavBar></NavBar>
       <div className='flex flex-col flex-1 overflow-y-auto'>
         <Routes>
           <Route path='/' element={<HeroSection/>}></Route>
-          <Route path='/about-us' element={<AboutUs/>}> </Route>
+          <Route path='/about' element={<AboutUs/>}> </Route>
         </Routes>
       </div>
     </div>     
